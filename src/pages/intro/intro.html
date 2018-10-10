@@ -1,0 +1,41 @@
+<!--
+  Generated template for the IntroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-spinner name="circles" *ngIf="companies == 0" style="color: #ecb61b !important;"></ion-spinner>
+<ion-content style="background: #FCFCFC" *ngIf="companies != 0">
+
+  <ion-slides pager="true" parallax="true" padding>
+
+    <ion-slide>
+      <div>
+        <img src="assets/imgs/intro1.png" style="width:105%;" />
+      </div>
+      <h2 style="font-size:80%;">Sobre</h2>
+      <p style="font-size:70%;">A Adventure Works Cycles é uma empresa multinacional de fabricação e venda de bikes metálicas e compostas para mercados comerciais norte-americanos,europeus e asiáticos.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <div>
+        <img src="assets/imgs/intro2.png" style="width:105%;" />
+      </div>
+      <h2 style="font-size:80%;">Necessidade</h2>
+      <p style="font-size:70%;">Adventure Works Cycles pretende expandir sua participação de mercado latino-americano visando aumentar suas vendas, e para isso resolveu instalar nova fábrica no Brasil.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <div>
+        <img src="assets/imgs/intro3.png" style="width:105%;" />
+      </div>
+      <h2 style="font-size:80%;">A solução</h2>
+      <p style="font-size:70%;">O controle e manutenção de estoque. Análise e controle de vendas. Controle de Acesso.</p>
+      <p style="font-size:13px;">Ficou Curioso?
+        <strong style="color: #e0b24f; font-size:15px;" (click)="irParaLogin()">Veja mais</strong>
+      </p>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

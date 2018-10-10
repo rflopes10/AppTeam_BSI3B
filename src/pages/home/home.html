@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="cNav">
+    <button *ngIf="!showSearchbar" ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <!-- Title -->
+    <ion-title *ngIf="!showSearchbar">Módulos</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toggleSearchbar()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-toolbar *ngIf="showSearchbar">
+      <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+    </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="card-background-page">
+  <button (click)="irProduto()" style="background-color:#f6f6f6;">
+    <ion-card>
+      <img src="assets/imgs/card-saopaolo.png" />
+      <div class="card-title">Produto</div>
+      <div class="card-subtitle">
+        Adventure Works
+        <br/> Curitiba-PR
+        <br/>
+      </div>
+    </ion-card>
+  </button>
+  <button (click)="irInventario()" style="background-color:#f6f6f6;">
+    <ion-card>
+      <img src="assets/imgs/card-madison.png" />
+      <div class="card-title">Inventário</div>
+      <div class="card-subtitle">
+        Adventure Works
+        <br/> Curitiba-PR
+        <br/>
+      </div>
+    </ion-card>
+  </button>
+  <button (click)="irRecursosHumanos()" style="background-color:#f6f6f6;">
+    <ion-card>
+      <img src="assets/imgs/card-saopaolo.png" />
+      <div class="card-title">Recursos Humanos</div>
+      <div class="card-subtitle">
+        Adventure Works
+        <br/> Curitiba-PR
+        <br/>
+      </div>
+    </ion-card>
+  </button>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="cNav">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <!-- Title -->
+    <ion-title>Recursos Humanos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+
+    <ion-item-group>
+      <ion-item-divider color="light">Empregados</ion-item-divider>
+      <ion-item (click)="irDetalhe()">Marty McFly</ion-item>
+      <ion-item>Emmett Brown</ion-item>
+      <ion-item>Jennifer Parker</ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="light">Candidatos</ion-item-divider>
+      <ion-item>Linda McFly</ion-item>
+      <ion-item>Biff Tannen</ion-item>
+      <ion-item>George McFly</ion-item>
+    </ion-item-group>
+</ion-content>

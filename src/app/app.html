@@ -1,0 +1,29 @@
+<ion-menu [content]="NAV">
+        <ion-content style="background-color:white;">
+          <div class="fHamb">
+            <div><img class="ftHamb" src="assets/imgs/logoR.png" alt="Logo"></div>
+            <div class="tHamb"> Adventure Works</div>
+            <div class="pHamb"> Matriz | 41 3333 3333</div>
+          </div>
+          <img class="logoFoto" src="assets/imgs/obraprima_op.png" alt="Logo AdventureWorks">
+      
+          <ion-list>
+            <button ion-item *ngFor="let page of pages" (click)="goToPage(page.component)" menuClose>
+              <ion-icon item-left class="iconHamb" name="{{ page.icon }}"></ion-icon><span class="txtHamb">{{ page.titulo }}</span>
+            </button>
+          </ion-list>
+          <ion-footer>
+            <div style="margin-top:-25%; ">
+              <button class="hLogin" ion-button menuClose block icon-end color="cWhite" (click)="logout()">
+              <ion-thumbnail item-start style="margin-right:11%; float:left;">
+              <img src="assets/imgs/contact.png" style="height:30px; width:30px; float:left;">
+              </ion-thumbnail>
+              <p>Otávio Zanon<p>
+              <button ion-button color="cWhite" class="buttonSair">Sair</button>
+              </button>
+            </div>
+          </ion-footer>
+        </ion-content>
+      </ion-menu>
+      
+      <ion-nav #NAV [root]="rootPage"></ion-nav>

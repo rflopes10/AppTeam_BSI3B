@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar color="cNav">
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <!-- Title -->
+      <ion-title>Inventário</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        Vendas
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        Estoque
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #pieCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+    <div class="buttonLogin" padding>
+      <button ion-button block color="buttonLogin" (click)="TodosProdutos()" style="height:40px;">Todos Produtos</button>
+    </div>
+  
+  </ion-content>
+  
